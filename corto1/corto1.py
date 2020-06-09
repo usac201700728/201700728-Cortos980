@@ -13,8 +13,8 @@ nf=728    #ultimos 3 digitos del carnet
 file = 'collatz.txt'  #nombre del archivo donde se guardaran los datos
 sfile = open(file, 'w')  #abir el archivo
 
-for i in range(2, nf+1):                           #recorre todos los numeros desde 2 hata 728
-    sfile.write(str(collatz(i))+'\n')              #escribe una linea en el archivo llamado collatz.txt 
+for i in range(2, nf+1):                           #encuentra la seccuencia de collatz para todos los numeros entre 2 - 728
+    sfile.write(str(collatz(i))+'\n')              #escribe la secuencia de collatz del numero i en el archivo collatz.txt 
 
 sfile.close()          #cerrar archivo
 
